@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>第三方组件库</title>
+  <link rel="shortcut icon" href="../ui/img/favicon.ico">
+  <link rel="stylesheet" href="../ui/css/base.css">
+  <link rel="stylesheet" href="prism/prism.css">
+  <link rel="stylesheet" href="../lib-global-styles/global-styles.css">
+  <link rel="stylesheet" href="../ui/css/layout/docs-layout.css">
+  <link rel="stylesheet" href="third-components.css">
+  <script src="../ui/js/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+  <div id="components" class="docs-layout ms-ui">
+    <!-- 页面顶部开始 -->
+    <header class="light">
+      <div class="align-center">
+        <a href="../index.html" title="ZoneUI"><span class="logo ms-fl font26">ZoneUI</span></a>
+        <nav class="ms-fr menu-nav">
+          <ul>
+            <li><a href="../index.html" title="ZoneUI">开始学习</a></li>
+            <li><a href="../standard/semver.html" title="语义化版本">语义化版本</a></li>
+            <li><a href="../standard/codeguide.html" title="前端规范">前端规范</a></li>
+            <li><a href="http://www.appinn.com/markdown/" title="Markdown语法说明">Markdown语法说明</a></li>
+            <li><a href="../lib-global-styles/global-styles.html" title="全局样式库">全局样式库</a></li>
+            <li><a href="../lib-components/components.html" title="组件库">组件库</a></li>
+            <li><a class="active" href="third-components.html" title="组件库">第三方组件库</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="docs-header">
+      <div class="align-center">
+        <h1>第三方组件库</h1>
+        <p>展示常用的第三方组件，包括下拉列表、加减框、多种分页效果等更多功能。</p>
+      </div>
+    </div>
+    <!-- 页面顶部结束 -->
+    <!-- 主体部分开始 -->
+    <div class="main">
+      <!-- 左侧导航开始 -->
+      <aside class="lf-nav">
+        <nav>
+          <p class="lf-nav-title">组件列表</p>
+          <ul class="parent-nav">
+            <li name="tianqi"><a href="#tianqi">天气插件</a></li>
+            <li name="laypage"><a href="#laypage">动态分页演示</a></li>
+            <li name="birthday-out"><a href="#birthday-out">生日</a></li>
+            <li name="pca"><a href="#pca">省市区联动</a></li>
+            <li name="ueditor"><a href="#ueditor">ueditor编辑器</a></li>
+            <li name="ECharts"><a href="#ECharts">ECharts</a></li>
+            <li name="layer"><a href="#layer">layer弹出层组件</a></li>
+            <li name="cropper" title="cropper头像上传截取"><a href="cropper/my-avatar.html">cropper头像上传截取</a></li>
+            <li name="owl-carousel" title="owl-carousel轮播图"><a href="owl-carousel/API/index.html">owl-carousel轮播图</a></li>
+            <li name="unslider" title="unslider轮播图"><a href="#unslider">unslider轮播图</a></li>
+            <li name="qrcode" title="二维码生成"><a href="#qrcode">二维码生成</a></li>
+            <li name="barcode" title="条形码生成"><a href="#barcode">条形码生成</a></li>
+            <li name="My97DatePicker" title="My97DatePicker日期插件"><a href="#My97DatePicker">My97日期插件</a></li>
+            <li name="flow-step" title="流程节点"><a href="flow-step/flow-step.html">流程节点组件Step</a></li>
+            <li name="webuploader" title="百度图片上传"><a href="#webuploader">百度图片上传插件</a></li>
+            <li name="nice-validator" title="nice Validator表单验证"><a href="#nice-validator">nice Validator表单验证</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- 左侧导航结束 -->
+      <!-- 各组件开始 -->
+      <article class="rg-content">
+        <section class="section-title" id="tianqi" class="docs-aritcle">
+          <h2>天气插件</h2>
+          <p>引入2345天气插件，效果如下：</p>
+          <!-- <iframe allowtransparency="true" frameborder="0" width="410" height="98" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=2&t=1&v=0&d=2&bd=0&k=000000&f=&q=1&e=0&a=1&c=54511&w=410&h=98&align=center"></iframe> -->
+          <p>html代码</p>
+          <pre class="language-markup"><code>&lt;iframe allowtransparency="true" frameborder="0" width="410" height="98" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=2&t=1&v=0&d=2&bd=0&k=000000&f=&q=1&e=0&a=1&c=54511&w=410&h=98&align=center"&gt;&lt;/iframe&gt;</code></pre>
+          <p>详情查看 <a class="color-blue" href="http://tianqi.2345.com/plugin/">2345天气插件</a>，选择自己喜欢的样式</p>
+        </section>
+        <section class="section-title" id="laypage">
+          <h2>动态分页演示 Laypage</h2>
+          <!-- 动态分页演示开始 -->
+          <div id="pagination"></div>
+          <p>====================================================================</p>
+          <p>把laypage整个目录放入你的项目，只需引入laypage.js即可，其它一律无视。</p>
+          <p>详细文档直接进入官网：<a href="http://laypage.layui.com">http://laypage.layui.com</a></p>
+          <pre class="language-js"><code>&lt;script src="laypage/laypage.js"&gt;&lt;/script&gt;</code></pre>
+          <p>初始化js</p>
+          <pre class="language-js"><code>
+laypage({
+    cont: $('#pagination'), //容器。值支持id名、原生dom对象，jquery对象,
+    pages: 20, //总页数
+    skip: true, //是否开启跳页
+    skin: '#d9534f',
+    groups: 3 //连续显示分页数
+});
+                    </code></pre>
+          <!-- 动态分页演示结束 -->
+          <!-- 需要引入资源库中的laypage.js -->
+        </section>
+        <section class="section-title" id="birthday-out">
+          <h2>生日</h2>
+          <div id="birthday-html">
+            <label>生日：</label>
+            <div id="birthday"></div>
+          </div>
+          <div class="docs-article">
+            <h2>使用方法</h2>
+            <p>直接写id="birthday"的空div</p>
+            <pre class="language-markup"><code> &lt;div id="birthday"&gt;&lt;/div&gt;</code></pre>
+            <p>并引入bday-picker.js</p>
+            <pre class="language-js"><code>&lt;script src="birthdaypicker/bday-picker.js"&gt;</code></pre>
+          </div>
+          <span>生日初始化的JS调用</span>
+          <pre class="language-js"><code>$(function() {
+    var datenow = new Date().Format("yyyy-MM-dd");
+    //用户生日
+    var birthday = '1991-05-20';
+    if (birthday != '') {
+        datenow = birthday;
+    }
+    $("#birthday").birthdaypicker({
+        dateFormat: "bigEndian",
+        monthFormat: "short",
+        placeholder: true,
+        hiddenDate: true,
+        // 设定默认日期
+        defaultDate: datenow
+    });
+});</code></pre>
+        </section>
+        <section class="section-title" id="pca" class="docs-article">
+          <h2>省市区联动</h2>
+          <div class="bottom10">
+            <form action="">
+              <span class="goodsAddress">所在地区：</span>
+              <select id="prov" name="province" data-code=""></select>省
+              <select id="city" name="city" data-code=""></select>市
+              <select id="area" name="area" data-code=""></select>区
+            </form>
+          </div>
+          <p>创建地址表单html</p>
+          <pre class="language-markup"><code>&lt;form action=""&gt;
+    &lt;select id="prov" name="province" data-code=""&gt;&lt;/select&gt;省
+    &lt;select id="city" name="city" data-code=""&gt;&lt;/select&gt;市
+    &lt;select id="area" name="area" data-code=""&gt;&lt;/select&gt;区
+&lt;/form&gt;</code></pre>
+          <p>引入js</p>
+          <pre class="language-js"><code>&lt;script src="pca/city2.js"&gt;&lt;/script&gt;
+&lt;script src="pca/citySelect2.js"&gt;&lt;/script&gt;</code></pre>
+          <p>地址js初始化</p>
+          <pre class="language-js"><code>var selectVal = new CitySelect({
+    data: data,
+    provId: "#prov",
+    cityId: '#city',
+    areaId: '#area',
+    isSelect: true // 默认为true 选择第一项 如果页面有指定省市区项时，就显示指定项。
+        // 如果false，就选中 "请选择"
+});</code></pre>
+        </section>
+        <section class="section-title" id="ueditor">
+          <h2>UEditor富文本编辑器</h2>
+          <p> <a href="ueditor/index.html" class="color-red">本地完整示例demo</a> 具体写法请查看页面html代码</p>
+          <p> <a href="ueditor/mini.html" class="color-red">自定义示例demo</a> 具体写法请查看页面html代码</p>
+          <p>这是百度前端团队开发的轻量、可定制、注重用户体验的一个编辑器。具体API详情请看链接<a href="http://fex.baidu.com/ueditor/ " class="color-red">http://fex.baidu.com/ueditor/</a>
+          </p>
+        </section>
+        <section class="section-title" id="ECharts" class="docs-article">
+          <h2>ECharts</h2>
+          <p>百度前端团队作品，详情请查看<a class="color-blue" href="http://echarts.baidu.com/index.html">ECharts官网</a></p>
+          <p>更多实例<a class="color-blue" href="http://echarts.baidu.com/examples.html">查看</a></p>
+          <p>ECharts，一个纯 Javascript 的图表库，可以流畅的运行在 PC 和移动设备上，兼容当前绝大部分浏览器（IE8/9/10/11，Chrome，Firefox，Safari等），底层依赖轻量级的 Canvas 类库 ZRender，提供直观，生动，可交互，可高度个性化定制的数据可视化图表。</p>
+          <p> ECharts 3 中更是加入了更多丰富的交互功能以及更多的可视化效果，并且对移动端做了深度的优化。</p>
+          <p>ECharts 提供了常规的折线图，柱状图，散点图，饼图，K线图，用于统计的盒形图，用于地理数据可视化的地图，热力图，线图，用于关系数据可视化的关系图，treemap，多维数据可视化的平行坐标，还有用于 BI 的漏斗图，仪表盘，并且支持图与图之间的混搭。</p>
+        </section>
+        <section class="section-title" id="layer" class="docs-article">
+          <h2>layer弹出层组件</h2>
+          <p>layer是一款近年来备受青睐的web弹层组件，她具备全方位的解决方案，致力于服务各水平段的开发人员，您的页面会轻松地拥有丰富友好的操作体验。 </p>
+          <p>只引用layer.js即可使用相应功能</p>
+          <pre class="language-js"><code>
+&lt;script src="layer.js的路径"&gt;&lt;/script&gt;
+//方法调用示例
+$('#test1').click(function(){
+  layer.msg('Hello layer');
+});
+                </code></pre>
+          <p> 更多详情请参考 <a href="http://layer.layui.com/" class="color-red">Layer官网说明文档</a></p>
+          <p>这里是如何使用layer的指引文档 <a href="http://layer.layui.com/hello.html" class="color-red">开始使用layer</a></p>
+        </section>
+        <section class="section-title" id="unslider" class="docs-article">
+          <h2>Unslider轮播图</h2>
+          <p>Unslider — 一个超小的 jQuery轮播（slider）插件</p>
+          <p>跨浏览器、支持键盘导航、自动调整亮度、支持响应式布局</p>
+          <p>如何使用<a href="http://www.bootcss.com/p/unslider/" class="color-red">请查看</a></p>
+        </section>
+        <section class="section-title" id="qrcode" class="docs-article">
+          <h2>qrcode二维码生成</h2>
+          <p>请在下面输入框中输入内容，然后点击【生成二维码】查看效果</p>
+          <form class="ms-form bottom20">
+            <label for="codekey">请输入内容：</label>
+            <input type="text" id="codekey" class="form-control">
+            <button id="createcode" class="btn btn-info" type="button">生成二维码</button>
+          </form>
+          <p>展示二维码</p>
+          <div id="showcode" class="bottom10"></div>
+          <p>html代码</p>
+          <pre class="language-markup"><code>&lt;form class="ms-form bottom20"&gt;
+    &lt;label for="codekey"&gt;请输入内容：&lt;/label&gt;
+    &lt;input type="text" id="codekey" class="form-control"&gt;
+    &lt;button id="createcode" class="btn btn-info" type="button"&gt;生成二维码&lt;/button&gt;
+&lt;/form&gt;
+&lt;p&gt;展示二维码&lt;/p&gt;
+&lt;div id="showcode"&gt;&lt;/div&gt;</code></pre>
+          <p>js方法调用</p>
+          <pre class="language-js"><code>//引入js
+&lt;script src="jquery.qrcode.min.js"&gt;&lt;/script&gt;
+//js方法调用
+$("#createcode").click(function() {
+    var key = $(this).prev().val();
+    console.log(key);
+    var str = toUtf8(key);
+    $("#showcode").empty();
+    $("#showcode").qrcode({
+        render: "table",
+        width: 140,
+        height: 140,
+        text: str
+    });
+});
+//二维码字符串转码
+function toUtf8(str) {
+    var out, i, len, c;
+    out = "";
+    len = str.length;
+    for (i = 0; i < len; i++) {
+        c = str.charCodeAt(i);
+        if ((c >= 0x0001) && (c <= 0x007F)) {
+            out += str.charAt(i);
+        } else if (c > 0x07FF) {
+            out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));
+            out += String.fromCharCode(0x80 | ((c >> 6) & 0x3F));
+            out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+        } else {
+            out += String.fromCharCode(0xC0 | ((c >> 6) & 0x1F));
+            out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+        }
+    }
+    return out;
+}</code></pre>
+        </section>
+        <section class="section-title" id="barcode" class="docs-article">
+          <h2>JsBarcode条形码</h2>
+          <h3>条码支持的有:</h3>
+          <ul class="first-nav">
+            <li>CODE128</li>
+            <ul class="second-nav">
+              <li>CODE128 (automatic mode switching)</li>
+              <li>CODE128 A/B/C (force mode)</li>
+            </ul>
+            <li>EAN</li>
+            <ul class="second-nav">
+              <li>EAN-13</li>
+              <li>EAN-8</li>
+              <li>EAN-5</li>
+              <li>EAN-2</li>
+              <li>UPC (A)</li>
+            </ul>
+            <li>CODE39</li>
+            <li> ITF-14</li>
+            <li>MSI</li>
+            <ul class="second-nav">
+              <li>MSI10</li>
+              <li>MSI11</li>
+              <li>MSI1010</li>
+              <li>MSI1110</li>
+            </ul>
+            <li>Pharmacode</li>
+            <li>Codabar</li>
+          </ul>
+          <svg id="svgcode"></svg>
+          <canvas id="canvascode"></canvas>
+          <img id="imgcode" />
+          <p>html代码</p>
+          <p>可以使用下面三种标签创建</p>
+          <pre class="language-markup"><code> &lt;svg id="svgcode"&gt;&lt;/svg&gt;
+&lt;canvas id="canvascode"&gt;&lt;/canvas&gt;
+&lt;img id="imgcode" /&gt;</code></pre>
+          <p>引用js和方法调用</p>
+          <p class="docs-tip">方法调用时需要在当前html或jsp页面中使用，不可放置到外链js文件中引入</p>
+          <pre class="language-markup"><code>&lt;!-- 生成条形码 --&gt;
+&lt;script src="JsBarcode.all.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+    /*========条形码生成开始========*/
+    JsBarcode("#svgcode", "Hi");
+    JsBarcode("#canvascode", "Hello");
+    JsBarcode("#imgcode", "ZoneUI");
+    /*========条形码生成结束========*/
+&lt;/script&gt;</code></pre>
+          <h3>了解更多详情请查看：</h3>
+          <p>GitHub：<a class="color-blue" href="https://github.com/lindell/JsBarcode">https://github.com/lindell/JsBarcode</a></p>
+          <p>条码生成器：<a class="color-blue" href="http://lindell.me/JsBarcode/generator/">http://lindell.me/JsBarcode/generator/</a></p>
+          <p>JsBarcode示例与设置：<a class="color-blue" href="http://codepen.io/lindell/pen/mPvLXx?editors=1010">http://codepen.io/lindell/pen/mPvLXx?editors=1010</a></p>
+        </section>
+        <section class="section-title" id="My97DatePicker" class="docs-article">
+          <h2>M97DatePicker日期插件</h2>
+          <form class="ms-form">
+            <label for="start-date">选择入住日期：</label>
+            <input type="text" id="start-date" class="Wdate form-control" onfocus="WdatePicker({minDate:'%y-%M-%d',maxDate:'#F{$dp.$D(\'end-date\')}',doubleCalendar:true,dateFmt:'yyyy-MM-dd',onpicked:function(dp){countDays();}})" />
+            <label for="end-date">选择退房日期：</label>
+            <input type="text" id="end-date" class="Wdate right10 form-control" onfocus="WdatePicker({minDate:'#F{$dp.$D(\'start-date\')|| %y-%M-%d}',doubleCalendar:true,dateFmt:'yyyy-MM-dd',onpicked:function(dp){countDays();}})" />
+            <span>共计</span>
+            <span class="color-red days">1</span>
+            <span>天</span>
+          </form>
+          <p>html代码</p>
+          <pre class="language-markup"><code>&lt;form class="ms-form"&gt;
+    &lt;label for="start-date"&gt;选择入住日期：&lt;/label&gt;
+    &lt;input type="text" id="start-date" class="Wdate form-control" onfocus="WdatePicker({minDate:'%y-%M-%d',maxDate:'#F{$dp.$D(\'end-date\')}',doubleCalendar:true,dateFmt:'yyyy-MM-dd',onpicked:function(dp){countDays();}})" /&gt;
+    &lt;label for="end-date"&gt;选择退房日期：&lt;/label&gt;
+    &lt;input type="text" id="end-date" class="Wdate right10 form-control" onfocus="WdatePicker({minDate:'#F{$dp.$D(\'start-date\')|| %y-%M-%d}',doubleCalendar:true,dateFmt:'yyyy-MM-dd',onpicked:function(dp){countDays();}})" /&gt;
+    &lt;span&gt;共计&lt;/span&gt;
+    &lt;span class="color-red days"&gt;1&lt;/span&gt;
+    &lt;span&gt;天&lt;/span&gt;
+&lt;/form&gt;</code></pre>
+          <p>js方法调用</p>
+          <pre class="language-js"><code>
+// 初始化入住退房时间
+initDate();
+
+// 初始化时间
+function initDate() {
+    var curDate = new Date();
+    var nowDate = curDate.Format("yyyy-MM-dd");
+    var nextDay = new Date((curDate / 1000 + 86400) * 1000)
+        .Format("yyyy-MM-dd");
+    $("#start-date").val(nowDate);
+    $("#end-date").val(nextDay);
+}
+
+//计算间隔天数方法
+function countDays() {
+    var startDate = $("#start-date").val();
+    var endDate = $("#end-date").val();
+
+    var days = getDays(startDate, endDate);
+    $(".days").text(days);
+}
+
+//获得两个日期间  差几天
+function getDays(strDateStart, strDateEnd) {
+    var strSeparator = "-"; //日期分隔符
+    var oDate1;
+    var oDate2;
+    var iDays;
+    oDate1 = strDateStart.split(strSeparator);
+    oDate2 = strDateEnd.split(strSeparator);
+    var strDateS = new Date(oDate1[0], oDate1[1] - 1, oDate1[2]);
+    var strDateE = new Date(oDate2[0], oDate2[1] - 1, oDate2[2]);
+    iDays = parseInt(Math.abs(strDateS - strDateE) / 1000 / 60 / 60 / 24) //把相差的毫秒数转换为天数
+    return iDays;
+}
+</code></pre>
+        </section>
+        <section class="section-title" id="webuploader" class="docs-article">
+          <h2>百度上传组件WebUploader</h2>
+          <p>WebUploader是由Baidu WebFE(FEX)团队开发的一个简单的以HTML5为主，FLASH为辅的现代文件上传组件。在现代的浏览器里面能充分发挥HTML5的优势，同时又不摒弃主流IE浏览器，沿用原来的FLASH运行时，兼容IE6+，iOS 6+, android 4+。两套运行时，同样的调用方式，可供用户任意选用。</p>
+          <p>采用大文件分片并发上传，极大的提高了文件上传效率。</p>
+          <p>点击查看<a class="color-blue" href="webuploader/webuploader.html">本地demo</a></p>
+          <p>具体详情请查看<a class="color-blue" href="http://fex.baidu.com/webuploader/">官方网站</a></p>
+        </section>
+        <section class="section-title" id="nice-validator" class="docs-article">
+          <h2>nice Validator表单验证</h2>
+          <img class="ms-img-responsive" src="third-lib-screenshort/nice-validator.jpg">
+          <p>点击查看<a class="color-blue" href="nice-validator/demo/full-example.html">本地demo</a></p>
+          <p>更多详情请查看<a class="color-blue" href="https://validator.niceue.com/">官网网站</a></p>
+        </section>
+      </article>
+      <!-- 各组件结束 -->
+    </div>
+    <!-- 主体部分结束 -->
+    <!-- 页尾开始 -->
+    <footer>
+      Copyright &copy; 2017 <a href="http://www.cainiaozone.com">菜鸟空间</a>. All Rights Reserved
+    </footer>
+    <!-- 页尾结束 -->
+    <!-- 返回顶部开始 -->
+    <div class="back-to-top"></div>
+    <!-- 返回顶部结束 -->
+  </div>
+  <script src="../ui/js/public.js"></script>
+  <script src="../ui/js/jquery.waypoints.min.js"></script>
+  <!-- 分页插件js -->
+  <script src="laypage/laypage.js"></script>
+  <!-- 生日插件js -->
+  <script src="birthdaypicker/bday-picker.js"></script>
+  <!-- 省市区插件js -->
+  <script src="pca/city2.js"></script>
+  <script src="pca/citySelect2.js"></script>
+  <!-- 生成二维码js -->
+  <script src="jquery.qrcode.min.js"></script>
+  <!-- 生成条形码 -->
+  <script src="JsBarcode.all.min.js"></script>
+  <script type="text/javascript">
+    /*========条形码生成开始========*/
+    JsBarcode("#svgcode", "Hi");
+    JsBarcode("#canvascode", "Hello");
+    JsBarcode("#imgcode", "ZoneUI");
+    /*========条形码生成结束========*/
+  </script>
+  <!-- 代码展示效果优化js -->
+  <script src="prism/prism.js"></script>
+  <!-- My97DatePicker日期插件 -->
+  <script src="My97DatePicker/WdatePicker.js"></script>
+  <!-- 自己封装的js -->
+  <script src="third-components.js"></script>
+</body>
+
+</html>

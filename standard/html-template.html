@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 优先使用 IE 最新版本和 Chrome；360浏览器就会在读取到这个标签后，立即切换对应的极速核。 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <!-- viewport 可以让布局在移动浏览器上显示的更好 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>Zone FE Template</title>
+  <!-- 国产浏览器采用极速内核 -->
+  <meta name="renderer" content="webkit">
+  <meta name="theme-color" content="#2932e1">
+  <!-- 管理着搜索引擎是否可以进入网页 [index,follow]表示可进入，[noindex,nofollow]表示不可以；可以用来阻止搜索引擎获取拷贝页面、私密页面和未完成的页面-->
+  <meta name="robots" content="index,follow">
+  <!-- 百度禁止转码 -->
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <!-- 定义网页作者author -->
+  <meta name="author" content="thone">
+  <!-- 添加到主屏后的标题（iOS 6 新增） -->
+  <meta name="apple-mobile-web-app-title" content="标题">
+  <!-- 是否启用 WebApp 全屏模式 -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- 设置状态栏的背景颜色，只有在 "apple-mobile-web-app-capable" content="yes" 时生效 -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <!-- 忽略数字自动识别为电话号码 -->
+  <meta content="telephone=no" name="format-detection" />
+  <!-- 忽略识别邮箱 -->
+  <meta content="email=no" name="format-detection" />
+  <!-- 页面关键词keywords -->
+  <meta name="keywords" content="">
+  <!-- 页面描述内容description -->
+  <meta name="description" content="">
+  <!-- 添加 favicon icon -->
+  <link rel="shortcut icon" href="ui/img/favicon.ico">
+  <!-- 必须要引用的CSS开始-->
+  <link rel="stylesheet" href="ui/css/base.css">
+  <!-- 必须要引用的CSS结束-->
+  <!-- 可选择引用的CSS开始 -->
+  <link rel="stylesheet" href="ui/css/public.css">
+  <!-- 可选择引用的CSS结束 -->
+  <!-- 让IE兼容H5的标签 -->
+  <!--[if IE]>
+        <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div>前端开发模板</div>
+  <!-- 必须要引用的JS开始 -->
+  <!-- 百度CDN库 -->
+  <script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- 调用本地jQuery库文件 -->
+  <script>
+    window.jQuery || document.write('<script src="ui/js/jquery-1.11.1.min.js"><\/script>')
+  </script>
+  <!-- 必须要引用的JS结束 -->
+  <!-- 可选择引用的JS开始 -->
+  <script>
+    // 打印招聘信息
+    try {
+      if (window.console && window.console.log) {
+        console.log('一张网页，要经历怎样的过程，才能抵达用户面前？\n一位新人，要经历怎样的成长，才能站在技术之巅？\n探寻这里的秘密；\n体验这里的挑战；\n成为这里的主人；\n加入菜鸟工作室，你，可以影响世界。\n');
+        console.log('请将简历发送至 %c **@***.com（ 邮件标题请以“姓名-应聘XX职位-来自console”命名）', 'color:red');
+        console.log('职位介绍：暂无')
+      }
+    } catch (e) {};
+    //百度统计代码
+    /*var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?8f2cf59312c5923b3cf9d52f59ca4b80";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();*/
+  </script>
+  <!-- 可选择引用的JS结束 -->
+</body>
+
+</html>
