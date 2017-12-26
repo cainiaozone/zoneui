@@ -237,6 +237,7 @@
     	var idx = selectId.selectedIndex, //获取选中的option的索引
             option,
             value,
+            name,
 			dataValue = $(_config.provId).val();
 		var html = "<option data-name='请选择' value='-1' selected>请选择</option>",
 			provOpt = $($(_config.provId + ' option')[0]).attr("value");
@@ -254,7 +255,10 @@
 			}else {
 				option = selectId.options[idx];  //获取选中的option元素
 				value = $(option).val();
+				name = $(option).attr("data-name");
 				$(selectId).attr("data-code",value);
+				$(selectId).attr("data-name",name);
+
 			}
         }
     },
